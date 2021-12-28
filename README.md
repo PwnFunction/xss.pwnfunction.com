@@ -1,8 +1,10 @@
 # XSS Game
 
-DOM XSS Challenges created by [PwnFunction](https://twitter.com/PwnFunction).
+Front-end and solutions for DOM XSS challenges created by [PwnFunction](https://twitter.com/PwnFunction)
 
-> Warning: This repo not maintained anymore. Building a better version - [HackerCamp.co](https://hackercamp.co/)
+Challenges are at [PwnFunction/sandbox.pwnfunction.com](https://github.com/PwnFunction/sandbox.pwnfunction.com)
+
+> ⚠ This repo not maintained anymore. Building a better version - [HackerCamp.co](https://hackercamp.co/)
 
 ## Live version
 
@@ -10,7 +12,7 @@ DOM XSS Challenges created by [PwnFunction](https://twitter.com/PwnFunction).
 
 ## Instructions
 
-> Warning: Old + bad code & breaking changes.
+> ⚠ Old + bad code & breaking changes.
 
 ```sh
 cd hugo
