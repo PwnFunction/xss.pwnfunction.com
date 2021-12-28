@@ -2,9 +2,9 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on XSS Game - Learning XSS Made Simple! | Created by PwnFunction</title>
-    <link>https://xss.pwnfunction.com/tags/</link>
+    <link>/tags/</link>
     <description>Recent content in Tags on XSS Game - Learning XSS Made Simple! | Created by PwnFunction</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language><atom:link href="https://xss.pwnfunction.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>en-us</language><atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

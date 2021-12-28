@@ -2,59 +2,59 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://xss.pwnfunction.com/challenges/</loc>
+    <loc>/challenges/</loc>
     <lastmod>2020-04-01T01:07:10+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/challenges/ded/</loc>
+    <loc>/challenges/ded/</loc>
     <lastmod>2020-04-01T01:07:10+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/</loc>
+    <loc>/</loc>
     <lastmod>2020-04-01T01:07:10+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/challenges/me-and-the-bois/</loc>
+    <loc>/challenges/me-and-the-bois/</loc>
     <lastmod>2020-03-14T01:53:46+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/challenges/bourne/</loc>
+    <loc>/challenges/bourne/</loc>
     <lastmod>2020-02-03T17:48:55+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/</loc>
+    <loc>/warmups/</loc>
     <lastmod>2020-01-19T18:35:26+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/ok-boomer/</loc>
+    <loc>/warmups/ok-boomer/</loc>
     <lastmod>2020-01-19T18:35:26+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/mafia/</loc>
+    <loc>/warmups/mafia/</loc>
     <lastmod>2020-01-19T18:23:18+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/ligma/</loc>
+    <loc>/warmups/ligma/</loc>
     <lastmod>2020-01-19T18:21:39+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/thats-hawt/</loc>
+    <loc>/warmups/thats-hawt/</loc>
     <lastmod>2020-01-19T18:19:34+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/ricardo/</loc>
+    <loc>/warmups/ricardo/</loc>
     <lastmod>2020-01-19T18:16:15+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/da-wey/</loc>
+    <loc>/warmups/da-wey/</loc>
     <lastmod>2020-01-19T18:11:02+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/jefff/</loc>
+    <loc>/warmups/jefff/</loc>
     <lastmod>2020-01-19T18:08:44+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/warmups/ma-spaghet/</loc>
+    <loc>/warmups/ma-spaghet/</loc>
     <lastmod>2020-01-19T18:02:05+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/challenges/area-51/</loc>
+    <loc>/challenges/area-51/</loc>
     <lastmod>2020-01-19T14:59:07+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/challenges/keanu/</loc>
+    <loc>/challenges/keanu/</loc>
     <lastmod>2020-01-19T14:59:07+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/challenges/ww3/</loc>
+    <loc>/challenges/ww3/</loc>
     <lastmod>2020-01-19T14:59:07+05:30</lastmod>
   </url><url>
-    <loc>https://xss.pwnfunction.com/categories/</loc>
+    <loc>/categories/</loc>
   </url><url>
-    <loc>https://xss.pwnfunction.com/tags/</loc>
+    <loc>/tags/</loc>
   </url>
 </urlset>
