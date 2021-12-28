@@ -1,0 +1,31 @@
+<!-- Solvers Modal -->
+<div class="modal fade" id="solvers" tabindex="-1" role="dialog" aria-labelledby="solversLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="solversLabel">Solvers</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>Listed based on the time of submission.</p>
+                <table class="table table-dark table-hover">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Handle</th>
+                            <th scope="col">Solution</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {{ .Inner }}
+                    </tbody>
+                </table>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

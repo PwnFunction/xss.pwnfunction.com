@@ -1,0 +1,19 @@
+.alert {
+    align-items: center;
+    background-color: darken($color: $secondary, $amount: 5);
+    border: 2px dashed $info;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 30px 0;
+    padding: .5em 1em;
+    width: 100%;
+    
+    &:hover {
+        border: 2px solid $info;
+    }
+
+    a {
+        color: $danger;
+        padding: 5px;
+    }
+}

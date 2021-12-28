@@ -1,0 +1,19 @@
+<!-- Warmups -->
+<div class="warmups">
+    <h1>Warmups</h1>
+    <div class="row">
+        {{ range where .Site.Pages.ByDate "Params.type" "warmup" }}
+        <div class="col">
+            <div class="card card-info" onclick="location='{{ .Permalink }}'">
+                <p class="card-title">{{ .Params.header }}</p>
+                <div class="card-data">
+                    <div class="difficulty card-sub">
+                        <i class="fas fa-bolt"></i>
+                        <p class="data">{{ .Params.difficulty }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+    </div>
+</div>

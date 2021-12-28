@@ -1,0 +1,96 @@
+.btn {
+    background-color: transparent;
+    color: #fff;
+    border-radius: 3px;
+    padding: .5em 2em;
+    transition: all .2s;
+    outline: none;
+    font-weight: 700;
+
+    &:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 7px 14px rgba(black, .1);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &:active {
+        transform: translateY(1.5px);
+    }
+}
+
+.btn-secondary {
+    background: transparent;
+    border: 1px solid darken($color: $secondary, $amount: 5);
+    background-color: darken($color: $secondary, $amount: 5);
+
+    &:hover {
+        background-color: $secondary;
+    }
+
+    &:active {
+        background-color: darken($color: $secondary, $amount: 10);
+        border-color: darken($color: $secondary, $amount: 10);
+    }
+
+}
+
+.btn-info {
+    background: transparent;
+    border: 1px solid darken($color: $info, $amount: 5);
+    background-color: darken($color: $info, $amount: 5);
+    color: #fff;
+
+    &:hover {
+        background-color: $info;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: darken($color: $info, $amount: 10);
+        border-color: darken($color: $info, $amount: 10);
+        color: #fff;
+    }
+}
+
+.btn-success {
+    background: transparent;
+    border: 1px solid darken($color: $success, $amount: 5);
+    background-color: darken($color: $success, $amount: 5);
+    color: #fff;
+
+    &:hover {
+        background-color: $success;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: darken($color: $success, $amount: 10);
+        border-color: darken($color: $success, $amount: 10);
+        color: #fff;
+    }
+}
+
+.btn-danger {
+    background: transparent;
+    border: 1px solid darken($color: $danger, $amount: 5);
+    background-color: darken($color: $danger, $amount: 5);
+    color: #fff;
+
+    &:hover {
+        background-color: $danger;
+        color: #fff;
+    }
+
+    &:active {
+        background-color: darken($color: $danger, $amount: 10);
+        border-color: darken($color: $danger, $amount: 10);
+        color: #fff;
+    }
+}
+
+.btn-highlight {
+    border: 2px solid lighten($color: $info, $amount: 0);
+}

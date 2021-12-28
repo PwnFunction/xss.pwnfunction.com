@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Warmups on XSS Game - Learning XSS Made Simple! | Created by PwnFunction</title>
+    <link>https://xss.pwnfunction.com/warmups/</link>
+    <description>Recent content in Warmups on XSS Game - Learning XSS Made Simple! | Created by PwnFunction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 19 Jan 2020 18:35:26 +0530</lastBuildDate><atom:link href="https://xss.pwnfunction.com/warmups/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XSS Game - Ok, Boomer | PwnFunction</title>
+      <link>https://xss.pwnfunction.com/warmups/ok-boomer/</link>
+      <pubDate>Sun, 19 Jan 2020 18:35:26 +0530</pubDate>
+      
+      <guid>https://xss.pwnfunction.com/warmups/ok-boomer/</guid>
+      <description>Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome.   &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;h2 id=&amp;#x22;boomer&amp;#x22;&amp;#x3E;Ok, Boomer.&amp;#x3C;/h2&amp;#x3E; &amp;#x3C;script&amp;#x3E; boomer.innerHTML = DOMPurify.sanitize(new URL(location).searchParams.get(&amp;#x27;boomer&amp;#x27;) || &amp;#x22;Ok, Boomer&amp;#x22;) setTimeout(ok, 2000) &amp;#x3C;/script&amp;#x3E;  Solution &amp;times;   The GET parameter boomer is set as boomer.innerHTML, but the issue is that the website uses DOMPurify, which sanitizes any Javascript and only leaves behind script-less parts. The very next statement is a sink, setTimeout executes code after a timeout specified in milliseconds.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Mafia | PwnFunction</title>
+      <link>https://xss.pwnfunction.com/warmups/mafia/</link>
+      <pubDate>Sun, 19 Jan 2020 18:23:18 +0530</pubDate>
+      
+      <guid>https://xss.pwnfunction.com/warmups/mafia/</guid>
+      <description>Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome.   /* Challenge */ mafia = (new URL(location).searchParams.get(&#39;mafia&#39;) || &#39;1+1&#39;) mafia = mafia.slice(0, 50) mafia = mafia.replace(/[\`\&#39;\&#34;\+\-\!\\\[\]]/gi, &#39;_&#39;) mafia = mafia.replace(/alert/g, &#39;_&#39;) eval(mafia)  Solution &amp;times;   The GET parameter mafia is passed to eval, but it does a couple of things before it sends it over.  Truncates to length 50.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Ligma | PwnFunction</title>
+      <link>https://xss.pwnfunction.com/warmups/ligma/</link>
+      <pubDate>Sun, 19 Jan 2020 18:21:39 +0530</pubDate>
+      
+      <guid>https://xss.pwnfunction.com/warmups/ligma/</guid>
+      <description>Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome.   /* Challenge */ balls = (new URL(location).searchParams.get(&#39;balls&#39;) || &#34;Ninja has Ligma&#34;) balls = balls.replace(/[A-Za-z0-9]/g, &#39;&#39;) eval(balls)  Solution &amp;times;   The GET parameter balls ends up in eval, but the problem is that it replaces all alphanumeric characters with an empty string like the following. balls = balls.replace(/[A-Za-z0-9]/g, &#39;&#39;) So we can use something like JSFuck, which converts your javascript code into valid non-alphanumeric esoteric javascript.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Ah That&#39;s Hawt | PwnFunction</title>
+      <link>https://xss.pwnfunction.com/warmups/thats-hawt/</link>
+      <pubDate>Sun, 19 Jan 2020 18:19:34 +0530</pubDate>
+      
+      <guid>https://xss.pwnfunction.com/warmups/thats-hawt/</guid>
+      <description>Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome.   &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;h2 id=&amp;#x22;will&amp;#x22;&amp;#x3E;&amp;#x3C;/h2&amp;#x3E; &amp;#x3C;script&amp;#x3E; smith = (new URL(location).searchParams.get(&amp;#x27;markassbrownlee&amp;#x27;) || &amp;#x22;Ah That&amp;#x27;s Hawt&amp;#x22;) smith = smith.replace(/[\(\&amp;#x60;\)\\]/g, &amp;#x27;&amp;#x27;) will.innerHTML = smith &amp;#x3C;/script&amp;#x3E;  Solution &amp;times;   Here we have a clear sink will.innerHTML, but alert(1337) can&#39;t be called because the filter removes ()` characters. But the filter forgets to consider that the values of the attribtues can be HTML entity encoded, hence we simply encode the payload.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Ricardo Milos | PwnFunction</title>
+      <link>https://xss.pwnfunction.com/warmups/ricardo/</link>
+      <pubDate>Sun, 19 Jan 2020 18:16:15 +0530</pubDate>
+      
+      <guid>https://xss.pwnfunction.com/warmups/ricardo/</guid>
+      <description>Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome.   &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;form id=&amp;#x22;ricardo&amp;#x22; method=&amp;#x22;GET&amp;#x22;&amp;#x3E; &amp;#x3C;input name=&amp;#x22;milos&amp;#x22; type=&amp;#x22;text&amp;#x22; class=&amp;#x22;form-control&amp;#x22; placeholder=&amp;#x22;True&amp;#x22; value=&amp;#x22;True&amp;#x22;&amp;#x3E; &amp;#x3C;/form&amp;#x3E; &amp;#x3C;script&amp;#x3E; ricardo.action = (new URL(location).searchParams.get(&amp;#x27;ricardo&amp;#x27;) || &amp;#x27;#&amp;#x27;) setTimeout(_ =&amp;#x3E; { ricardo.submit() }, 2000) &amp;#x3C;/script&amp;#x3E;  Solution &amp;times;   ricardo.action is set to a user controlled input through a GET parameter ricardo and the form is auto submitted, ergo a Javascript URI would do it.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Ugandan Knuckles | PwnFunction</title>
+      <link>https://xss.pwnfunction.com/warmups/da-wey/</link>
+      <pubDate>Sun, 19 Jan 2020 18:11:02 +0530</pubDate>
+      
+      <guid>https://xss.pwnfunction.com/warmups/da-wey/</guid>
+      <description>Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome.   &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;div id=&amp;#x22;uganda&amp;#x22;&amp;#x3E;&amp;#x3C;/div&amp;#x3E; &amp;#x3C;script&amp;#x3E; let wey = (new URL(location).searchParams.get(&amp;#x27;wey&amp;#x27;) || &amp;#x22;do you know da wey?&amp;#x22;); wey = wey.replace(/[&amp;#x3C;&amp;#x3E;]/g, &amp;#x27;&amp;#x27;) uganda.innerHTML = &amp;#x60;&amp;#x3C;input type=&amp;#x22;text&amp;#x22; placeholder=&amp;#x22;${wey}&amp;#x22; class=&amp;#x22;form-control&amp;#x22;&amp;#x3E;&amp;#x60; &amp;#x3C;/script&amp;#x3E;  Solution &amp;times;   The GET parameter wey becomes a part of the uganda.innerHTML, but before that it filters a bunch of characters out.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Jefff | PwnFunction</title>
+      <link>https://xss.pwnfunction.com/warmups/jefff/</link>
+      <pubDate>Sun, 19 Jan 2020 18:08:44 +0530</pubDate>
+      
+      <guid>https://xss.pwnfunction.com/warmups/jefff/</guid>
+      <description>Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome.   &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;h2 id=&amp;#x22;maname&amp;#x22;&amp;#x3E;&amp;#x3C;/h2&amp;#x3E; &amp;#x3C;script&amp;#x3E; let jeff = (new URL(location).searchParams.get(&amp;#x27;jeff&amp;#x27;) || &amp;#x22;JEFFF&amp;#x22;) let ma = &amp;#x22;&amp;#x22; eval(&amp;#x60;ma = &amp;#x22;Ma name ${jeff}&amp;#x22;&amp;#x60;) setTimeout(_ =&amp;#x3E; { maname.innerText = ma }, 1000) &amp;#x3C;/script&amp;#x3E;  Solution &amp;times;   The GET parameter jeff lands inside eval eval(`ma = &#34;Ma name ${jeff}&#34;`), hence we can break out of the string with double quotes and execute our own code.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Ma Spaghet! | PwnFunction</title>
+      <link>https://xss.pwnfunction.com/warmups/ma-spaghet/</link>
+      <pubDate>Sun, 19 Jan 2020 18:02:05 +0530</pubDate>
+      
+      <guid>https://xss.pwnfunction.com/warmups/ma-spaghet/</guid>
+      <description>  Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome.   &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;h2 id=&amp;#x22;spaghet&amp;#x22;&amp;#x3E;&amp;#x3C;/h2&amp;#x3E; &amp;#x3C;script&amp;#x3E; spaghet.innerHTML = (new URL(location).searchParams.get(&amp;#x27;somebody&amp;#x27;) || &amp;#x22;Somebody&amp;#x22;) + &amp;#x22; Toucha Ma Spaghet!&amp;#x22; &amp;#x3C;/script&amp;#x3E;  Solution &amp;times;   The solution is straight forward, the GET parameter somebody is assigned to spaghet.innerHTML in an unsafe way, so something as simple as the following would work. &amp;lt;svg onload=alert(1337)&amp;gt;  Close     </description>
+    </item>
+    
+  </channel>
+</rss>

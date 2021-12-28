@@ -1,0 +1,76 @@
+.nav {
+    background-color: darken($color: $secondary, $amount: 5);
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0;
+    padding: .5em 1em;
+    width: 100%;
+
+    &-left > .logo {
+        cursor: pointer;
+        font-size: 26px;
+        font-weight: bold;
+        user-select: none; 
+
+        & > a {
+            outline: none;
+            text-decoration: none;
+        }
+    }
+
+    &-middle { 
+        cursor: pointer;
+        
+        & > span {
+            font-size: 24px;
+        }
+    }
+
+    &-right > a {
+        text-decoration: none;
+        outline: none;
+
+        & > i {
+            font-size: 24px;
+            margin: 0 .25em;
+            transition: all .2s;
+
+            &:hover {
+                transform: translateY(-2px);
+            }
+
+            &:active {
+                transform: translateY(1.5px);
+            }
+        }
+
+        & > .fa-twitter {
+            color: $info;
+
+            &:hover {
+                color: lighten($color: $info, $amount: 10)
+            }
+
+            &:active {
+                color: darken($color: $info, $amount: 5)
+            }
+        }   
+        & > .fa-youtube {
+            color: $danger;
+
+            &:hover {
+                color: lighten($color: $danger, $amount: 10)
+            }
+
+            &:active {
+                color: darken($color: $danger, $amount: 5)
+            }
+        } 
+    }
+    
+    & > * {
+        margin: 0;
+    }
+}

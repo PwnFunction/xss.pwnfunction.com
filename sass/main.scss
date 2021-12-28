@@ -1,0 +1,81 @@
+// Font overrides
+@import url("https://fonts.googleapis.com/css?family=Inconsolata:400,700&display=swap");
+
+* {
+  font-family: "Inconsolata", monospace;
+}
+
+@import "custom/variables";
+
+@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/variables";
+@import "node_modules/bootstrap/scss/mixins";
+
+@import "node_modules/bootstrap/scss/reboot";
+@import "node_modules/bootstrap/scss/grid";
+
+@import "node_modules/bootstrap/scss/transitions";
+
+// Code overrides
+$code-color: #ff4473;
+@import "node_modules/bootstrap/scss/code";
+
+// Close overrides
+$close-color: #fff;
+@import "node_modules/bootstrap/scss/close";
+.close {
+  &:focus,
+  &:active {
+    outline: none;
+  }
+}
+
+// Modal overrides
+$modal-content-bg: darken(
+  $color: $secondary,
+  $amount: 10
+);
+$modal-header-border-color: darken(
+  $color: $secondary,
+  $amount: 0
+);
+$modal-content-border-color: darken(
+  $color: $secondary,
+  $amount: 0
+);
+$modal-footer-border-color: darken(
+  $color: $secondary,
+  $amount: 0
+);
+@import "node_modules/bootstrap/scss/modal";
+.modal-body > a {
+  text-decoration: none;
+
+  &:hover {
+    border-bottom: 1px solid #fff;
+  }
+}
+
+// Table overrides
+$table-dark-bg: darken(
+  $color: $secondary,
+  $amount: 10
+);
+$table-dark-border-color: darken(
+  $color: $secondary,
+  $amount: 5
+);
+$table-dark-hover-bg: darken(
+  $color: $secondary,
+  $amount: 0
+);
+@import "node_modules/bootstrap/scss/tables";
+
+@import "custom/alert";
+@import "custom/buttons";
+@import "custom/cards";
+@import "custom/code";
+@import "custom/colors";
+@import "custom/hr";
+@import "custom/navbar";
+@import "custom/utils";

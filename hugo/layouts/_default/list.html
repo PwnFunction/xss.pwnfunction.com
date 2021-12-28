@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta -->
+    {{ partial "head/meta.html" . }}
+    {{ partial "head/favicon.html" . }}
+    <title>{{ .Title }}</title>
+
+    <!-- Styles -->
+    {{ partial "head/styles/external.html" . }}
+    {{ partial "head/styles/internal.html" . }}
+    <link rel="stylesheet" href="/css/custom.css">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Nav -->
+        {{ partial "header/nav.html" . }}
+
+        <!-- Alerts -->
+        {{ partial "header/alerts.html" . }}
+
+        <!-- Warmups -->
+        {{ partial "main/warmups.html" . }}
+
+        <hr>
+
+        <!-- Challenges -->
+        {{ partial "main/challenges.html" . }}
+    </div>
+
+    <!-- Modals -->
+    {{ partial "modals/about.html" . }}
+
+    <!-- Scripts -->
+    {{ partial "footer/scripts/external.html" . }}
+    {{ partial "footer/scripts/analytics.html" . }}
+</body>
+
+</html>

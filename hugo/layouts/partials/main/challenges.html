@@ -1,0 +1,35 @@
+<!-- Challenges -->
+<div class="challenges">
+    <h1>Challenges</h1>
+    <div class="row">
+        {{ range where .Site.Pages.ByDate "Params.type" "challenge" }}
+        <div class="col">
+            <div class='card card-{{ cond (eq .Params.live "true") "success" "danger" }}'
+                onclick="location='{{ .Permalink }}'">
+                <p class="card-title">{{ .Params.header }}</p>
+                <div class="card-data">
+                    <div class="difficulty card-sub">
+                        <i class="fas fa-bolt"></i>
+                        <p class="data">{{ .Params.difficulty }}</p>
+                    </div>
+                    <div class="solves card-sub">
+                        <i class="fas fa-trophy"></i>
+                        <p class="data">{{ .Params.solvers }}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {{ end }}
+        <div class="col">
+            <div class="card card-secondary">
+                <p class="card-title">Next Meme 👏</p>
+                <div class="card-data">
+                    <div class="difficulty card-sub">
+                        <i class="fas fa-hourglass-half"></i>
+                        <p class="data">coming soon!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,73 @@
+.card {
+    background-color: darken($color: $secondary, $amount: 5);
+    border-radius: 2px;
+    cursor: pointer;
+    height: 110px;
+    overflow: hidden;
+    padding: .5em 1em;
+    width: 250px;
+    transition: all .2s;
+    margin: 15px auto;
+
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 7px 14px rgba(black, .35);
+    }
+
+    &-title {
+        padding-left: 5px;
+        font-size: 24px;
+    }
+
+    &-data {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &-data, &-sub {
+        display: flex;
+        align-items: center;
+        
+        i, .data {
+            margin: 5px;
+        }
+    }
+
+    &-data > div > p, &-data > div > i, &-data > i {
+        color: lighten($color: #1C1E29, $amount: 50);
+    }
+
+    &-data > .solves > i, &-data > .solves > p {
+        color: #ffa600 !important;
+    }
+
+    &-data > i {
+        transition: all .1s;
+
+        &:hover {
+            color: #fff;
+        }
+    }
+
+    &-link {
+        color: lighten($color: #1C1E29, $amount: 50);
+        text-decoration: none;
+    }
+}
+
+.card-info {
+    border-top: 3px solid $info;
+}
+
+.card-danger {
+    border-top: 3px solid $danger;
+}
+
+.card-success {
+    border-top: 3px solid $success;
+}
+
+.card-secondary {
+    border-top: 3px solid lighten($color: $secondary, $amount: 25);
+}
+
