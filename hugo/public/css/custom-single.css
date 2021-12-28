@@ -1,0 +1,30 @@
+/* Utils */
+.margin-top {
+    margin-top: 10px;
+}
+
+/* Wrapper */
+.wrapper {
+    padding: 0 15px;
+}
+
+/*  Flex header */
+.flex-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.flex-header-buttons > button:not(:last-child) {
+    margin-right: 10px;
+}
+
+/* Code block */
+.code-block {
+    border: 2px solid #393c5563;
+    border-radius: 4px;
+}
+
+.solution-code-block {
+    border: 2px solid #3d4058; 
+    border-radius: 4px;
+}

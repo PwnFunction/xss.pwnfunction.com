@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Challenges on XSS Game - Learning XSS Made Simple! | Created by PwnFunction</title>
+    <link>/challenges/</link>
+    <description>Recent content in Challenges on XSS Game - Learning XSS Made Simple! | Created by PwnFunction</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 01 Apr 2020 01:07:10 +0530</lastBuildDate><atom:link href="/challenges/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>XSS Game - Ded | PwnFunction</title>
+      <link>/challenges/ded/</link>
+      <pubDate>Wed, 01 Apr 2020 01:07:10 +0530</pubDate>
+      
+      <guid>/challenges/ded/</guid>
+      <description>Difficulty is Medium. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome. Challenge was downgraded because of Jquery&#39;s endless mutations. Unintended solution? DM me @PwnFunction.    &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;div id=&amp;#x22;ded&amp;#x22;&amp;#x3E; &amp;#x3C;button type=&amp;#x22;button&amp;#x22; class=&amp;#x22;btn btn-lg btn-danger&amp;#x22; data-toggle=&amp;#x22;popover&amp;#x22; title=&amp;#x22;Hints&amp;#x22; data-html=&amp;#x22;true&amp;#x22; data-content=&amp;#x22;&amp;#x3C;li&amp;#x3E;Anything different about this challenge?&amp;#x3C;/li&amp;#x3E; &amp;#x3C;li&amp;#x3E;Look Deeper!&amp;#x3C;/li&amp;#x3E;&amp;#x22;&amp;#x3E;Lemme help you.&amp;#x3C;/button&amp;#x3E; &amp;#x3C;/div&amp;#x3E; &amp;#x3C;script&amp;#x3E; /* Inputs */ let code = (new URL(location).searchParams.get(&amp;#x27;code&amp;#x27;)).replace(/script/ig, &amp;#x22;_&amp;#x22;) || &amp;#x60;&amp;#x3C;li&amp;#x3E;&amp;#x3C;strike&amp;#x3E;ded&amp;#x3C;/strike&amp;#x3E;&amp;#x3C;/li&amp;#x3E;&amp;#x60; let clean = DOMPurify.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Me and the Bois | PwnFunction</title>
+      <link>/challenges/me-and-the-bois/</link>
+      <pubDate>Sat, 14 Mar 2020 01:53:46 +0530</pubDate>
+      
+      <guid>/challenges/me-and-the-bois/</guid>
+      <description>Difficulty is Medium. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome. Unintended solution? DM me @PwnFunction.    &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;div id=&amp;#x22;bois&amp;#x22;&amp;#x3E; &amp;#x3C;/div&amp;#x3E; &amp;#x3C;script&amp;#x3E; /* Variables */ let safeTags = [&amp;#x27;a&amp;#x27;, &amp;#x27;area&amp;#x27;, &amp;#x27;b&amp;#x27;, &amp;#x27;br&amp;#x27;, &amp;#x27;col&amp;#x27;, &amp;#x27;code&amp;#x27;, &amp;#x27;div&amp;#x27;, &amp;#x27;em&amp;#x27;, &amp;#x27;hr&amp;#x27;, &amp;#x27;h1&amp;#x27;, &amp;#x27;h2&amp;#x27;, &amp;#x27;h3&amp;#x27;, &amp;#x27;h4&amp;#x27;, &amp;#x27;h5&amp;#x27;, &amp;#x27;h6&amp;#x27;, &amp;#x27;i&amp;#x27;, &amp;#x27;iframe&amp;#x27;, &amp;#x27;img&amp;#x27;, &amp;#x27;li&amp;#x27;, &amp;#x27;ol&amp;#x27;, &amp;#x27;p&amp;#x27;, &amp;#x27;pre&amp;#x27;, &amp;#x27;s&amp;#x27;, &amp;#x27;small&amp;#x27;, &amp;#x27;span&amp;#x27;, &amp;#x27;sub&amp;#x27;, &amp;#x27;sup&amp;#x27;, &amp;#x27;strong&amp;#x27;, &amp;#x27;u&amp;#x27;, &amp;#x27;ul&amp;#x27;] let forbiddenAttrs = [&amp;#x27;style&amp;#x27;, &amp;#x27;srcdoc&amp;#x27;] let cssSafe = /[^a-zA-Z0-9\s\-\,\:\_\(\)\{\}\&amp;#x22;\&amp;#x27;\.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Jason Bourne | PwnFunction</title>
+      <link>/challenges/bourne/</link>
+      <pubDate>Mon, 03 Feb 2020 17:48:55 +0530</pubDate>
+      
+      <guid>/challenges/bourne/</guid>
+      <description>Difficulty is Medium. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome. Unintended solution? DM me @PwnFunction.    &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;script&amp;#x3E; /* Helpers */ const bootstrapAlert = (msg, type) =&amp;#x3E; { return (&amp;#x60;&amp;#x3C;div class=&amp;#x22;alert alert-${type}&amp;#x22; role=&amp;#x22;alert&amp;#x22;&amp;#x3E;${DOMPurify.sanitize(msg)}&amp;#x3C;/div&amp;#x3E;&amp;#x60;) } document.getAlert = () =&amp;#x3E; document.getElementById(&amp;#x27;alerts&amp;#x27;); &amp;#x3C;/script&amp;#x3E; &amp;#x3C;script&amp;#x3E; /* Welcome */ let name = (new URL(location).searchParams.get(&amp;#x27;name&amp;#x27;)) || &amp;#x22;Pamela Landy&amp;#x22;; document.write( bootstrapAlert(&amp;#x60;&amp;#x3C;b&amp;#x3E;Operation Treadstone&amp;#x3C;/b&amp;#x3E;: Welcome &amp;#x3C;u&amp;#x3E;${name}&amp;#x3C;/u&amp;#x3E;.&amp;#x60;, &amp;#x27;info&amp;#x27;) ) &amp;#x3C;/script&amp;#x3E; &amp;#x3C;!</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Area 51 | PwnFunction</title>
+      <link>/challenges/area-51/</link>
+      <pubDate>Sun, 19 Jan 2020 14:59:07 +0530</pubDate>
+      
+      <guid>/challenges/area-51/</guid>
+      <description>Difficulty is Easy. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome. Unintended solution? DM me @PwnFunction.    &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;div id=&amp;#x22;pwnme&amp;#x22;&amp;#x3E;&amp;#x3C;/div&amp;#x3E; &amp;#x3C;script&amp;#x3E; var input = (new URL(location).searchParams.get(&amp;#x27;debug&amp;#x27;) || &amp;#x27;&amp;#x27;).replace(/[\!\-\/\#\&amp;#x26;\;\%]/g, &amp;#x27;_&amp;#x27;); var template = document.createElement(&amp;#x27;template&amp;#x27;); template.innerHTML = input; pwnme.innerHTML = &amp;#x22;&amp;#x3C;!-- &amp;#x3C;p&amp;#x3E; DEBUG: &amp;#x22; + template.outerHTML + &amp;#x22; &amp;#x3C;/p&amp;#x3E; --&amp;#x3E;&amp;#x22;; &amp;#x3C;/script&amp;#x3E;  Solution &amp;times;   Intended The value of the GET parameter debug ends up inside a comment which is then inserted to the DOM via innerHTML.</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - Keanu | PwnFunction</title>
+      <link>/challenges/keanu/</link>
+      <pubDate>Sun, 19 Jan 2020 14:59:07 +0530</pubDate>
+      
+      <guid>/challenges/keanu/</guid>
+      <description>Difficulty is Medium. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome. Unintended solution? DM me @PwnFunction.    &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;number id=&amp;#x22;number&amp;#x22; style=&amp;#x22;display:none&amp;#x22;&amp;#x3E;&amp;#x3C;/number&amp;#x3E; &amp;#x3C;div class=&amp;#x22;alert alert-primary&amp;#x22; role=&amp;#x22;alert&amp;#x22; id=&amp;#x22;welcome&amp;#x22;&amp;#x3E;&amp;#x3C;/div&amp;#x3E; &amp;#x3C;button id=&amp;#x22;keanu&amp;#x22; class=&amp;#x22;btn btn-primary btn-sm&amp;#x22; data-toggle=&amp;#x22;popover&amp;#x22; data-content=&amp;#x22;DM @PwnFunction&amp;#x22; data-trigger=&amp;#x22;hover&amp;#x22; onclick=&amp;#x22;alert(&amp;#x60;If you solved it, DM me @PwnFunction :)&amp;#x60;)&amp;#x22;&amp;#x3E;Solved it?&amp;#x3C;/button&amp;#x3E; &amp;#x3C;script&amp;#x3E; /* Input */ var number = (new URL(location).searchParams.get(&amp;#x27;number&amp;#x27;) || &amp;#x22;7&amp;#x22;)[0], name = DOMPurify.sanitize(new URL(location).searchParams.get(&amp;#x27;name&amp;#x27;), { SAFE_FOR_JQUERY: true }); $(&amp;#x27;number#number&amp;#x27;).</description>
+    </item>
+    
+    <item>
+      <title>XSS Game - WW3 | PwnFunction</title>
+      <link>/challenges/ww3/</link>
+      <pubDate>Sun, 19 Jan 2020 14:59:07 +0530</pubDate>
+      
+      <guid>/challenges/ww3/</guid>
+      <description>Difficulty is Hard. Pop an alert(1337) on sandbox.pwnfunction.com. No user interaction. Cannot use https://sandbox.pwnfunction.com/?html=&amp;js=&amp;css=. Tested on Chrome. Unintended solution? DM me @PwnFunction.    &amp;#x3C;!-- Challenge --&amp;#x3E; &amp;#x3C;div&amp;#x3E; &amp;#x3C;h4&amp;#x3E;Meme Code&amp;#x3C;/h4&amp;#x3E; &amp;#x3C;textarea class=&amp;#x22;form-control&amp;#x22; id=&amp;#x22;meme-code&amp;#x22; rows=&amp;#x22;4&amp;#x22;&amp;#x3E;&amp;#x3C;/textarea&amp;#x3E; &amp;#x3C;div id=&amp;#x22;notify&amp;#x22;&amp;#x3E;&amp;#x3C;/div&amp;#x3E; &amp;#x3C;/div&amp;#x3E; &amp;#x3C;script&amp;#x3E; /* Utils */ const escape = (dirty) =&amp;#x3E; unescape(dirty).replace(/[&amp;#x3C;&amp;#x3E;&amp;#x27;&amp;#x22;=]/g, &amp;#x27;&amp;#x27;); const memeTemplate = (img, text) =&amp;#x3E; { return (&amp;#x60;&amp;#x3C;style&amp;#x3E;@import url(&amp;#x27;https://fonts.googleapis.com/css?family=Oswald:700&amp;#x26;display=swap&amp;#x27;);&amp;#x60;+ &amp;#x60;.meme-card{margin:0 auto;width:300px}.meme-card&amp;#x3E;img{width:300px}&amp;#x60;+ &amp;#x60;.meme-card&amp;#x3E;h1{text-align:center;color:#fff;background:black;margin-top:-5px;&amp;#x60;+ &amp;#x60;position:relative;font-family:Oswald,sans-serif;font-weight:700}&amp;#x3C;/style&amp;#x3E;&amp;#x60;+ &amp;#x60;&amp;#x3C;div class=&amp;#x22;meme-card&amp;#x22;&amp;#x3E;&amp;#x3C;img src=&amp;#x22;${img}&amp;#x22;&amp;#x3E;&amp;#x3C;h1&amp;#x3E;${text}&amp;#x3C;/h1&amp;#x3E;&amp;#x3C;/div&amp;#x3E;&amp;#x60;) } const memeGen = (that, notify) =&amp;#x3E; { if (text &amp;#x26;&amp;#x26; img) { template = memeTemplate(img, text) if (notify) { html = (&amp;#x60;&amp;#x3C;div class=&amp;#x22;alert alert-warning&amp;#x22; role=&amp;#x22;alert&amp;#x22;&amp;#x3E;&amp;#x3C;b&amp;#x3E;Meme&amp;#x3C;/b&amp;#x3E; created from ${DOMPurify.</description>
+    </item>
+    
+  </channel>
+</rss>
